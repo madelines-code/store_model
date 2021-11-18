@@ -7,5 +7,10 @@ Rails.application.routes.draw do
   get "/stores/:id/edit", to: "stores#edit"
   post "/stores/:id", to: "stores#update"
   delete "/stores/:id", to: "stores#destroy"
+
+  resources :stores do
+    resources :items
+  end
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

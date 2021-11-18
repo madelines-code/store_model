@@ -6,13 +6,16 @@ const Stores = (props) => {
     return props.stores.map((store) => {
       return (
         <div>
-          <p>
-            {store.name}
-          </p>
+          <h1>{store.name}</h1>
+          <p>Store ID: {store.id}</p>
           
-          <button href={`/stores/${store.id}` className = "buttons"}>View Store</button>
+          <a href={`/stores/${store.id}`}>View Store</a>
           {/* COULDN'T USE THE CODE BLOCK BELOW WITH PROPS.STORE.ID instead of store.id BECAUSE IT'S ALREADY INSIDE THE FUNCTION WHERE PROPS IS CALLED */}
-          <button href = {`/stores/${store.id}`} data-method = "delete">Delete Store</button>
+          {/* when I tried to change a tag to button the button didn't work. why?*/}
+          {/* <button href = {`/stores/${store.id}`} data-method = "delete">Delete Store</button> */}
+          <a href={`/stores/${store.id}/items`}>What Can I Buy?</a>
+          <a href={`/stores/${store.id}/edit`}>Edit</a>
+          <a href = {`/stores/${store.id}`} data-method = "delete">Delete Store</a>
         </div>
       )
     });

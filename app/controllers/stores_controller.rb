@@ -1,5 +1,6 @@
 class StoresController < ApplicationController
-
+# used function belwo when calling params but could have used 
+# @store if there was a fin_store before action called here
   #(R)ead
   def index
     # get all stores 
@@ -64,8 +65,6 @@ end
   def find_store
     @store = Store.find(params[:id])
   end
-
-
 
 
 end
