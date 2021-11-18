@@ -53,12 +53,12 @@ class ItemsController < ApplicationController
     end
   end
 
-  # # DELETE	/subs/:sub_id/topics/:id
-  # # delete a single topic
-  # def destroy
-  #   @topic.destroy
-  #   redirect_to sub_topics_path(@sub)
-  # end
+  # DELETE	/stores/:store_id/items/:id
+  # delete a single item
+  def destroy
+    @item.destroy
+    redirect_to store_items_path(@store)
+  end
 
   private
 

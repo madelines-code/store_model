@@ -12,12 +12,9 @@ const Items = (props) => {
           
           <a href={`/stores/${props.store.id}/items/${item.id}`}>Item Details</a>
           <a href={`/stores/${props.store.id}/items/${item.id}/edit`}>Edit Item</a>
-          {/* <a
-            data-method="delete"
-            href={`/stores/${props.store.id}/items/${item.id}`}
-          >
-            delete
-          </a> */}
+          <a data-method="delete" href={`/stores/${props.store.id}/items/${item.id}`}>
+            Delete Item
+          </a>
         </div>
       );
     });

@@ -12,6 +12,9 @@ const Item = (props) => {
         <p>Name: {props.item.name}</p>
         <p>Price: ${props.item.price}</p>
         <p>Description: {props.item.description}</p>
+        <a data-method="delete" href={`/stores/${props.store.id}/items/${props.item.id}`}>
+            Delete Item
+          </a>
       </div>
       <code>{JSON.stringify(props)}</code>
     </div>
