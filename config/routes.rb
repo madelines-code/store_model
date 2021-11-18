@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   post "/stores", to: "stores#create"
   get "/stores/:id", to: "stores#show"
   get "/stores/:id/edit", to: "stores#edit"
-  patch "/stores/:id", to: "stores#update"
+  post "/stores/:id", to: "stores#update"
   delete "/stores/:id", to: "stores#destroy"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
