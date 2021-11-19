@@ -16,9 +16,11 @@ const Item = (props) => {
             Delete Item
           </a>
       </div>
+
       <code>{JSON.stringify(props)}</code>
     </div>
   );
 };
 
 export default Item;
+
