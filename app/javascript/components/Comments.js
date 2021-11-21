@@ -18,7 +18,7 @@ const Comments = (props) => {
       );
     });
   };
-  console.log(props)
+
   return (
     <div>
       <h1>Item: {props.item.name}</h1>

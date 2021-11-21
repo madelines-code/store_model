@@ -12,7 +12,7 @@ class StoresController < ApplicationController
     
     #f ind store and show it (1 user by id)
     # render store
-    render component: "Store", props: {store: (find_store)}
+    render component: "Store", props: {store: (find_store), items: (find_store.items)}
   end
 
   #(C)reate
