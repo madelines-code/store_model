@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
   # GET	/stores/:store_id/items/:id
   # show a single item
   def show
-    render component: "Item", props: { item: @item, store: @store, comments:}
+    render component: "Item", props: { item: @item, store: @store, comments: @item.comments}
   end
 
   # get '/stores/:store_id/items/new'

@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ a {
+   margin-right: 10px;
+   padding-right: 10px;
+   text-decoration: none;
+   color:rgb(9, 11, 160);
+   border-right: 1px solid gray;
+ }
+
+ .store_container {
+   background-color: rgba(252, 186, 3, 0.25);
+   padding: 15px;
+   margin: 12px;
+   border: 2px solid black
+ }

@@ -4,7 +4,7 @@ const Items = (props) => {
   const renderItems = () => {
     return props.items.map((item) => {
       return (
-        <div className="item-container">
+        <div className='item-container'>
           <h2>{item.name}</h2>
           <h3>${item.price}</h3>
           <h3>{item.description}</h3>

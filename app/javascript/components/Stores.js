@@ -5,7 +5,7 @@ const Stores = (props) => {
     
     return props.stores.map((store) => {
       return (
-        <div>
+        <div className = 'store_container'>
           <h1>{store.name}</h1>
           <p>Store ID: {store.id}</p>
           
