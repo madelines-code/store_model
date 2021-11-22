@@ -4,7 +4,7 @@ const Items = (props) => {
   const renderItems = () => {
     return props.items.map((item) => {
       return (
-        <div className='item-container'>
+        <div className='items'>
           <h2>{item.name}</h2>
           <h3>${item.price}</h3>
           <h3>{item.description}</h3>
@@ -23,8 +23,6 @@ const Items = (props) => {
     <div>
       <h1>Store: {props.store.name}</h1>
       <p>Store ID: {props.store.id}</p>
-
-      {/* a link to go back to subs index */}
       <a href={`/stores`}>Back to Stores</a>
       <a href={`/stores/${props.store.id}/items/new`}>New Item</a>
       <hr />

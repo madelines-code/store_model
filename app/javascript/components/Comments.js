@@ -24,7 +24,6 @@ const Comments = (props) => {
       <h1>Item: {props.item.name}</h1>
       <p>Item ID: {props.item.id}</p>
 
-      {/* a link to go back to subs index */}
       <a href={`/stores/${props.item.store_id}/items`}>Back to Items</a>
       <a href={`/items/${props.item.id}/comments/new`}>New Comment</a>
       <hr />

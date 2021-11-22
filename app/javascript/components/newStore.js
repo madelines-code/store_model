@@ -18,7 +18,6 @@ const newStore = (props) =>{
 //   );
 // };
   return (
-    // CAN I ONLY HAVE ONE DIV IN A RETURN?
     <div>
       <a href="/">Home</a>
       <a href="/">Back to Store List</a>

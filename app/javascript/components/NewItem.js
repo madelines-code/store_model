@@ -12,7 +12,6 @@ const NewItem = (props) => {
         <p>Description</p>
         <textarea name="item[description]" />
         <br/>
-        {/* why do I have to format line break with slash after the br? */}
         <button type="submit">Add Item</button>
       </form>
 
